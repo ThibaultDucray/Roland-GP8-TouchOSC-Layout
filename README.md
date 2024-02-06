@@ -17,6 +17,7 @@ Enjoy!
 - All effects and parameters visualy editing.
 - Name the preset ("Name" button).
 - Save to a group / bank / number ("Write to" button).
+- Stombox mode: send a CC MIDI message on channel 5 to TouchOSC to [en|dis]able effect (ex: to enable Distortion, send on channel 5 message "CC 4 127", and "CC 4 0" to disable)
 
 # Limitations
 This layout cannot **read** the content of the Roland GP-8. It can just help to **create** your sound, **name** it, **save** it.
