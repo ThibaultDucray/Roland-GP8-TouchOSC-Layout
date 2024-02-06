@@ -11,14 +11,14 @@ Enjoy!
 
 # Functionalities
 - MIDI channel select.
-- Group / bank / number of preset select ("Go to" button).
+- Group / bank / number of preset select ("Go to" button). *See Limitations below: the content of the preset will not be loaded into TouchOSC.*
 - All effects and parameters visualy editing.
 - Name the preset ("Name" button).
 - Save to a group / bank / number ("Write to" button).
 
 # Limitations
-- Cannot *read* the content of the GP-8. You just can *create* your sound, *name* it, *save* it.
-- Why? because... I did not have fhe time yet. But it is already a big enhancement to use the GP-8 with a large touch screen.
+This layout cannot **read** the content of the Roland GP-8. It can just help to **create** your sound, **name** it, **save** it.
+Why this? because... I did not have the time yet. But it is already a big enhancement to use the GP-8 with a large touch screen.
 
 # What you need
 - A Roland GP-8
