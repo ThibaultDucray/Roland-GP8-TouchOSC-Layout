@@ -6,7 +6,7 @@ This is a TouchOSC layout to control the Roland GP-8 vintage guitar effect proce
 # How to use?
 Download and install TouchOSC from https://hexler.net
 
-Download the [.tosc file](https://github.com/ThibaultDucray/Roland-GP8-TouchOSC-Layout/blob/main/GP8-controler.tosc) from this repository, open it with TouchOSC. 
+Download the .tosc file [from the release section](https://github.com/ThibaultDucray/Roland-GP8-TouchOSC-Layout/releases) from this repository, open it with TouchOSC. 
 Configure MIDI on your device.
 
 Enjoy!
