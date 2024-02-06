@@ -1,5 +1,5 @@
 # Roland-GP8-TouchOSC-Layout
-This is a TouchOSC layout to control the Roland GP-8 vintage guitar effect processor via MIDI.
+This is a TouchOSC template to control the Roland GP-8 vintage guitar effect processor via MIDI.
 
 ![Screenshot](../../blob/main/Roland%20GP8%20layout%2001.png)
 
