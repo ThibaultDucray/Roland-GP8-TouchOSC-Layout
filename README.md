@@ -25,7 +25,8 @@ Why this? because... I did not have the time yet. But it is already a big enhanc
 
 # What you need
 - A Roland GP-8
-- A MIDI card connected to your device
+- TouchOSC installed on a device
+- A MIDI card connected to your device and to the GP-8
 
 # Other files
 I also gave you the main code section writen in LUA. not interested for users.
