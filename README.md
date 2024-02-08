@@ -12,15 +12,15 @@ Configure MIDI on your device.
 Enjoy!
 
 # Functionalities
-- MIDI channel select.
-- Group / bank / number of preset select ("Go to" button). *See Limitations below: the content of the preset will not be loaded into TouchOSC.*
-- All effects and parameters visualy editing.
-- Name the preset ("Name" button).
-- Save to a group / bank / number ("Write to" button).
-- Stombox mode: send a CC MIDI message on channel 5 to TouchOSC to [en|dis]able effect : Ch5 CC EffectNumber [0 | 127] (ex: to enable Distortion, send on channel 5 message "CC 4 127", and "CC 4 0" to disable)
+- **MIDI channel** select (be sure to use the same channel number than the one of the GP-8).
+- **Preset select** with group / bank / number (clic the "Go to" button). *See Limitations below: the content of the preset will not be loaded into TouchOSC.*
+- **Effect on/off and parameters**, all effects and parameters can be visualy edited.
+- **Preset naming** with the "Name" button. *Only sent to GP-8 when saving*
+- **Save preset** to a group / bank / number (clic the "Write to" button).
+- **Stombox mode** by sending a CC MIDI message on **channel 5** to TouchOSC to [en|dis]able effect. Syntax: Ch5 CC EffectNumber [0 | 127] (ex: send message "CC 4 127" on channel 5 to enable Distortion, send "CC 4 0" to disable)
 
 # Limitations
-This layout cannot **read** the content of the Roland GP-8. It can just help to **create** your sound, **name** it, **save** it.
+This current version of the layout cannot **read** the content of the Roland GP-8. It can just help to **create** your sound, **name** it, **save** it.
 Why this? because... I did not have the time yet. But it is already a big enhancement to use the GP-8 with a large touch screen.
 
 # What you need
