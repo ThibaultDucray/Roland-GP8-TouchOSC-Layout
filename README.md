@@ -29,4 +29,4 @@ Why this? because... I did not have the time yet. But it is already a big enhanc
 - A MIDI card connected to your device and to the GP-8
 
 # Other files
-I also gave you the main code section writen in LUA. not interested for users.
+I also gave you the main code section writen in Lua, used to encode the Sysex messages. Not interesting for users, but good reference for developers, if needed.
