@@ -4,7 +4,7 @@ function checksum(t)
   do
     cs = cs + t[i]
   end
-  return cs % 0x80
+  return 0x80 - (cs % 0x80)
 end
     
 -- read effects MSB
@@ -294,7 +294,7 @@ end
 
 -- read NAME
 function nameParam(t)
-  local str = root.children.gname.children.string16.values.text
+  local str = root.children.string16.values.text
   for i = 1, 16 do
     t[#t + 1] = string.byte(str, i)
   end
@@ -304,7 +304,7 @@ end
 -- send bytes of data at the given roland address
 -- this fuction creates the sysex header and happends checksum and end of sysex then sends to MIDI
 function sendOneParam(data)
-  if #data == 0 then
+  if #data == 0 or self.values.x == 0 then
     return
   end
   
@@ -322,6 +322,9 @@ end
 
 -- send all params in GP8 memory (given group-bank-number id)
 function writeAll(gbn)
+  if self.values.x == 0 then
+    return
+  end
   local address = (gbn * 0x40) + 0x2000
   local addressMSB = math.floor(address / 0x80)
   local addressLSB = address % 0x80
@@ -342,7 +345,6 @@ function writeAll(gbn)
   ext2AllParams(t)
   nameParam(t)
   t[#t + 1] = 0x0 -- end of string
-  -- end todo
   sendOneParam(t)
 end
 
