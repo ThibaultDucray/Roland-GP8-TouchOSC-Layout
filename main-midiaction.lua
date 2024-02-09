@@ -4,7 +4,8 @@ function checksum(t)
   do
     cs = cs + t[i]
   end
-  return 0x80 - (cs % 0x80)
+  cs = cs % 0x80
+  return (0x80 - cs) % 0x80
 end
     
 -- read effects MSB
@@ -49,9 +50,15 @@ function effectsAllParams(t)
   t[#t + 1] = effectsLSB()
 end
 
-function effectsParams()
-  t = { 0x0, 0x0 }
-  effectsAllParams(t)
+function effectsParams(v)
+  t = { 0x0 }
+  if v < 5 then
+    t[#t + 1] = 0x1
+    t[#t + 1] = effectsLSB()
+  else
+    t[#t + 1] = 0x0
+    t[#t + 1] = effectsMSB()
+  end
   return t
 end
     
@@ -351,7 +358,7 @@ end
 -- notif of changed values
 function onReceiveNotify(key, value)
   if key == "EFF" then
-    sendOneParam(effectsParams())
+    sendOneParam(effectsParams(value))
   elseif key == "DF" then
     sendOneParam(dfParams(value))
   elseif key == "COMP" then

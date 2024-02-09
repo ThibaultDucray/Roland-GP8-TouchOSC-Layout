@@ -6,7 +6,8 @@ function checksum(t)
     do
       cs = cs + t[i]
     end
-    return 0x80 - (cs % 0x80)
+    cs = cs % 0x80
+    return (0x80 - cs) % 0x80
   end
 
 function wait40ms()
@@ -31,7 +32,7 @@ function onValueChanged(x)
     if x == "x" and self.values.x == 0 then
         local gbn = 0
         if self.parent.children.group.values.text == "B" then
-        gbn = 64
+            gbn = 64
         end
         gbn = gbn + (tonumber(self.parent.children.bank.values.text) - 1) * 8 + (tonumber(self.parent.children.number.values.text) - 1)
         self.parent.children.label4.values.text = tostring(gbn)
