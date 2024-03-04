@@ -14,7 +14,7 @@ Enjoy!
 # Functionalities
 - **MIDI channel** select (be sure to use the same channel number than the one of the GP-8).
 - **Preset select and load** with group / bank / number, then clic the "Load" button to get dat from GP-8.
-- **Preset previous and next** navigate sequentially from one preset to another with the left or right arrow, it automatically loads the preset's settings. This function can also be controled by sending a MIDI message (Ch 5, CC 100 for previous or 101 for next preset). 
+- **Preset previous and next** with the left or right arrow. It automatically loads the preset's settings. This function can also be controled by sending a MIDI message (Ch 5, CC 100 for previous or 101 for next preset). 
 - **Effect on/off and parameters**, all effects and parameters can be visualy edited.
 - **Preset naming** with the "Name" button. *Only sent to GP-8 when saving*
 - **Save preset** with group / bank / number, then clic the "Save" button.
