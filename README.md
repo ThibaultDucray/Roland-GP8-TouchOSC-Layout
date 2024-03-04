@@ -18,7 +18,7 @@ Enjoy!
 - **Effect on/off and parameters**, all effects and parameters can be visualy edited.
 - **Preset naming** with the "Name" button. *Only sent to GP-8 when saving*
 - **Save preset** with group / bank / number, then clic the "Save" button.
-- **Stombox mode** by sending a CC MIDI message on **channel 5** to TouchOSC to [en|dis]able effect. Syntax: Ch5 CC EffectNumber [0 | 127] (ex: send message "CC 4 127" on channel 5 to enable Distortion, send "CC 4 0" to disable)
+- **Stompbox mode** by sending a CC MIDI message on **channel 5** to TouchOSC to [en|dis]able effect. Syntax: Ch5 CC EffectNumber [0 | 127] (ex: send message "CC 4 127" on channel 5 to enable Distortion, send "CC 4 0" to disable)
 
 # What you need
 - A Roland GP-8
