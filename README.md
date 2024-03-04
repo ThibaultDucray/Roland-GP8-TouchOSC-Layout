@@ -13,10 +13,11 @@ Enjoy!
 
 # Functionalities
 - **MIDI channel** select (be sure to use the same channel number than the one of the GP-8).
-- **Preset select and load** with group / bank / number and/or left and right arrows, then clic the "Load" button to get dat from GP-8.
+- **Preset select and load** with group / bank / number, then clic the "Load" button to get dat from GP-8.
+- **Preset prevous and next** navigate sequentially from one preset to another with the left or right arrow, it automatically loads the preset's settings. This function can also be controled by sending a MIDI message (Ch 5, CC 100 for previous or 101 for next preset). 
 - **Effect on/off and parameters**, all effects and parameters can be visualy edited.
 - **Preset naming** with the "Name" button. *Only sent to GP-8 when saving*
-- **Save preset** to a group / bank / number (clic the "Save" button).
+- **Save preset** with group / bank / number, then clic the "Save" button.
 - **Stombox mode** by sending a CC MIDI message on **channel 5** to TouchOSC to [en|dis]able effect. Syntax: Ch5 CC EffectNumber [0 | 127] (ex: send message "CC 4 127" on channel 5 to enable Distortion, send "CC 4 0" to disable)
 
 # What you need
