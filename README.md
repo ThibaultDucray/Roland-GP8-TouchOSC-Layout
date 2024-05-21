@@ -14,11 +14,11 @@ Enjoy!
 # Functionalities
 - **MIDI channel** select (be sure to use the same channel number than the one of the GP-8).
 - **Preset select and load** with group / bank / number, then clic the "Load" button to get dat from GP-8.
-- **Preset previous and next** with the left or right arrow. It automatically loads the preset's settings. This function can also be controled by sending a MIDI message (see details below). 
+- **Preset previous and next** with the left or right arrow. It automatically loads the preset's settings. This function can also be controled by sending a MIDI message on channel 5 (see details below). 
 - **Effect on/off and parameters**, all effects and parameters can be visualy edited.
 - **Preset naming** with the "Name" button. *Only sent to GP-8 when saving*
 - **Save preset** with group / bank / number, then clic the "Save" button.
-- **Stompbox mode** by sending a CC MIDI message (see details below)
+- **Stompbox mode** by sending a CC MIDI message on channel 5 (see details below).
 
 # What you need
 - A Roland GP-8
@@ -28,7 +28,7 @@ Enjoy!
 # Other files
 I also gave you the main code sections writen in Lua, used to encode the Sysex messages. Not interesting for users, but good reference for developers, if needed.
 
-# MIDI messages to control the layout
+# MIDI messages on channel 5 to control the layout
 
 I have to explain things here. Everything inside the GP8 can be controled via MIDI, but mainly with Sysex messages, except preset changes which use Program Change messages. The Roland Sysex messages are hard to create, and the majority of MIDI controlers cannot handle them.
 
@@ -40,7 +40,7 @@ Thus, the MIDI workflow is:
 - program your MIDI pedalboard to send CC messages to TouchOSC GP8 layout on **MIDI channel 5**
 - TouchOSC GP8 layout converts the received messages in Sysex commands sent to the GP8 on the MIDI channel you configured for your GP8 (which should preferably not be number 5).
 
-## Documentation about CC messages
+## Documentation about CC messages on channel 5
 
 - **To switch to previous preset**, send 2 messages (to simulate the press and release of the Left Arrow button of the layout):
   - CC 100 127
