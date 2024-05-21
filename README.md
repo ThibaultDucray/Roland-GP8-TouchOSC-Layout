@@ -49,15 +49,15 @@ Thus, the MIDI workflow is:
   - CC 101 127
   - CC 101 0
 - **To turn on a specific effect**, send 1 message:
-  - CC <EffectNumber> 127
+  - CC *EffectNumber* 127
 - **To turn off a specific effect**, send 1 message:
-  - CC <EffectNumber> 0
+  - CC *EffectNumber* 0
 - **To adjust an effect parameter** to a given value (from 0 to 127), send 1 message:
-  - CC <EffectParameterNumber> <value>
+  - CC *EffectParameterNumber* <value>
 - **To toggle DF to UP or OD to TURBO**, send 1 message:
-  - CC <EffectParameterNumber> 127
+  - CC *EffectParameterNumber* 127
 - **To toggle DF to DOWN or OD to STD**, send 1 message:
-  - CC <EffectParameterNumber> 0
+  - CC *EffectParameterNumber* 0
 
 ## EffectNumber reference
 
