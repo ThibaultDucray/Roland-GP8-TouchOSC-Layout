@@ -120,3 +120,7 @@ Thus, the MIDI workflow is:
 2024-05-21
 Better management of toggles for DF up-down and OD turbo.
 Added CC for controling effect parameters from external midi controler.
+
+# Wanna say thank you?
+
+Listen to our music! https://walruspark.co/
